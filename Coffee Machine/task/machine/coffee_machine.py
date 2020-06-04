@@ -45,8 +45,6 @@ def supplies():
     {amounts["disposable_cups"]} of disposable cups
     {amounts["money"]} of money""")
 
-def coffee_success():
-    print("I hav enough resources, making you a coffee!")
 
 options = ""
 while options != "exit":
@@ -72,8 +70,6 @@ while options != "exit":
                 amounts["money"] -= 4
                 amounts["disposable_cups"] += 1
                 print(f"Sorry, not enough {message}!")
-            else:
-                coffee_success()
 
         elif types == "2":
             amounts["water"] -= 350
@@ -98,8 +94,6 @@ while options != "exit":
                 amounts["milk"] += 75
                 amounts["disposable_cups"] += 1
                 print(f"Sorry, not enough {message}!")
-            else:
-                coffee_success()
         elif types == "3":
             amounts["water"] -= 200
             amounts["milk"] -= 100
@@ -123,8 +117,6 @@ while options != "exit":
                 amounts["milk"] += 100
                 amounts["disposable_cups"] += 1
                 print(f"Sorry, not enough {message}!")
-            else:
-                coffee_success()
         elif types == "back":
             continue
 
